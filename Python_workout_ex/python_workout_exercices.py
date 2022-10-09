@@ -801,3 +801,20 @@ def create_password(string):
 generate_pass = create_password('abcdef') 
 
 print(generate_pass(10)) # Calling a function with inner function
+
+
+
+def join_numbers(num):
+    return ','.join([str(item) for item in range(num)])
+
+print(join_numbers(10))
+
+
+def sum_of_hex(lst):
+    return sum([int(item,16) for item in lst])
+
+lst_hex =['0x9a', '0x14', '0x28', '0x14', '0xb']
+
+str_numb = '10 abc 20 de44 30 55fg 40'
+
+x =sum([int(number) for number in str_numb.split() if number.isdigit()])
