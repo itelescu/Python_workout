@@ -178,7 +178,7 @@ triangle_name('Telescu')
 def pig_latin(par):
     x = 'aeiou'
     if par[0] in x:
-        print(par[1:]+'way')
+        print(par[:]+'way')
     elif par[0] in x.capitalize():
         print(par[1:].capitalize()+'way')
     else:
@@ -193,7 +193,7 @@ def pig_sent(par):
     final_lst = []
     for i in par.split():
         if i[0] in x:
-            final_lst.append(i[:1]+'way')
+            final_lst.append(i[:]+'way')
         else:
             final_lst.append(i[1:]+par[0]+'ay')
     return ' '.join(final_lst)
